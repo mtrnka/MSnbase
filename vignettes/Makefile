@@ -30,11 +30,6 @@ all:
 	make io
 	make clean
 
-setvars:
-ifeq (${R_HOME},)
-R_HOME=	$(shell R RHOME)
-endif
-
 demo: 
 	"$(R_HOME)/bin/R" CMD pdflatex MSnbase-demo.tex
 	bibtex MSnbase-demo

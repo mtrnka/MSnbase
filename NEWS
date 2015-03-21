@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.14.2
+-------------------------
+ o Remove GNU Make syntax [2015-03-21 Sat]
+
 CHANGES IN VERSION 1.14.1
 -------------------------
  o fix error (missing header extraction) is MSmap example
