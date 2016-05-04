@@ -1,3 +1,8 @@
+CHANGES IN VERSION 1.20.2
+-------------------------
+ o grep/getEcols have a 'n' param specifying which line to grep/get
+   <2016-05-04 Wed>
+
 CHANGES IN VERSION 1.20.1
 -------------------------
  o Fix wrong indexing in readMSdata, msLevel==1 (PR #85 by jotsetung)
