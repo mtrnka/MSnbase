@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.20.6
+-------------------------
+ o Update google code URLs to github <2016-05-19 Thu>
+ 
 CHANGES IN VERSION 1.20.3
 -------------------------
  o Check for rownames/fnames in readMSnSet2 and unit test

@@ -1,8 +1,9 @@
 context("MzTab class")
 
+baseUrl <- "https://raw.githubusercontent.com/HUPO-PSI/mzTab/master/examples/"
+
 test_that("MzTab creation and accessors", {
               fl <- "iTRAQ_CQI.mzTab"
-              baseUrl <- "https://mztab.googlecode.com/svn/examples/"
               fl <- file.path(baseUrl, fl)
               xx <- MzTab(fl)
               expect_true(validObject(xx))
@@ -29,7 +30,6 @@ test_that("MzTab creation and accessors", {
 
 test_that("Conversion to MSnSetList", {
               fl <- "iTRAQ_CQI.mzTab"
-              baseUrl <- "https://mztab.googlecode.com/svn/examples/"
               fl <- file.path(baseUrl, fl)
               xx <- MzTab(fl)
               msl <- as(xx, "MSnSetList")

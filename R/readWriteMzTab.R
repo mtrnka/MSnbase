@@ -19,7 +19,7 @@
 ##' details about the inners of \code{readMzTabData}.
 ##' @author Laurent Gatto
 ##' @examples
-##' testfile <- "https://mztab.googlecode.com/svn/examples//PRIDE_Exp_Complete_Ac_16649.xml-mztab.txt"
+##' testfile <- "https://raw.githubusercontent.com/HUPO-PSI/mzTab/master/examples/PRIDE_Exp_Complete_Ac_16649.xml-mztab.txt"
 ##' prot <- readMzTabData(testfile, "PRT")
 ##' prot
 ##' head(fData(prot))
@@ -79,7 +79,7 @@ makePRT <- function(...) .Defunct()
 ##' @seealso \code{\link{writeMzTabData}} to save an
 ##' \code{"\linkS4class{MSnSet}"} as an \code{mzTab} file.
 ##' @examples
-##' testfile <- "http://mztab.googlecode.com/svn/legacy/jmztab-1.0/examples/mztab_itraq_example.txt"
+##' testfile <- "https://raw.githubusercontent.com/HUPO-PSI/mzTab/master/legacy/jmztab-1.0/examples/mztab_itraq_example.txt"
 ##' prot <- readMzTabData_v0.9(testfile, "PRT")
 ##' prot
 ##' pep <- readMzTabData_v0.9(testfile, "PEP")
