@@ -56,7 +56,7 @@ as.data.frame.MSmap <- function(x) as(x, "data.frame")
 
 setAs("MSmap", "data.frame",
       function(from) {
-          .int <- msMap(from)[, ncol(msMap(from)):1]
+	  .int <- as.numeric(msMap(M))
           .rt <- rtime(from)/60
           .mz <- mz(from)
           .ms <- msLevel(from)
