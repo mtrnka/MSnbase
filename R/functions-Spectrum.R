@@ -334,7 +334,7 @@ bin_Spectrum <- function(object, binSize = 1L,
 
 bin_Spectra <- function(object1, object2, binSize = 1L,
                         breaks = seq(floor(min(c(mz(object1), mz(object2)))),
-                                     ceiling(max(c(mz(object1), mz(object2)))),
+                                     ceiling(max(c(mz(object1), mz(object2)))) + binSize,
                                      by = binSize)) {
   return(list(bin_Spectrum(object1, binSize = binSize, breaks = breaks),
               bin_Spectrum(object2, binSize = binSize, breaks = breaks)))
